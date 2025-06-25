@@ -1,5 +1,7 @@
 package Appraisal;
 
+
+
 public class PermanentEmployee extends Employee {
     float basicSalary;
     float da;

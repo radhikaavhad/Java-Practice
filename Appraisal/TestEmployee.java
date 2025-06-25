@@ -1,3 +1,5 @@
+package Appraisal;
+
 import java.util.Scanner;
 
 public class TestEmployee {
@@ -42,8 +44,8 @@ public class TestEmployee {
                     break;
 
                 default:
-                System.out.println("Invalid choice");
-                break;
+                    System.out.println("Invalid choice");
+                    break;
             }
         }
         sc.close();
@@ -53,14 +55,14 @@ public class TestEmployee {
             appraisal.calculateAppraisal(employee);
         }
 
-        System.out.println("=== Printing Employee Details ===");
-        for (Employee employee : employeesArray) {
-            System.out.println(employee.getClass().getSimpleName());   //states which class it belongs to 
-            //can also be done like this      // if (employee instanceof PermanentEmployee) {
-            //     System.out.println("PE");
-            // }
-            employee.display();
-            System.out.println("=================");
-        }
+//        System.out.println("=== Printing Employee Details ===");
+//        for (Employee employee : employeesArray) {
+//            System.out.println(employee.getClass().getSimpleName());   //states which class it belongs to
+//            //can also be done like this      // if (employee instanceof PermanentEmployee) {
+//            //     System.out.println("PE");
+//            // }
+//            employee.display();
+//            System.out.println("=================");
+//        }
     }
 }

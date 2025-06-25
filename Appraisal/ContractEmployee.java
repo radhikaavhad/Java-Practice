@@ -1,5 +1,7 @@
 package Appraisal;
 
+
+
 public class ContractEmployee extends Employee {
     int ratePerHour = 2000;
     float hoursWorked;
