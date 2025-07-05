@@ -1,0 +1,8 @@
+com\model\Book.class
+com\servlet\DeleteServlet.class
+com\util\DBUtil.class
+com\dao\BookDAO.class
+com\servlet\UpdateServlet.class
+com\servlet\ViewServlet.class
+com\servlet\AddServlet.class
+com\dao\BookDAOImpl.class
