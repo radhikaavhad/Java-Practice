@@ -24,21 +24,25 @@ public class ViewServlet extends HttpServlet {
         BookDAO dao = new BookDAOImpl();
         List<Book> books = dao.view();
 
-        out.println("<table border>");
-        out.println("<tr>");
-        out.println("<th>Book ID</th>");
-        out.println("<th>Book Name</th>");
-        out.println("<th>Book Price</th>");
-        out.println("</tr>");
-
-        for (Book book : books) {
+        if (books == null)
+            out.println("No books to display");
+        else {
+            out.println("<table border>");
             out.println("<tr>");
-            out.println("<td>" + book.getId() + "</td>");
-            out.println("<td>" + book.getName() + "</td>");
-            out.println("<td>" + book.getPrice() + "</td>");
+            out.println("<th>Book ID</th>");
+            out.println("<th>Book Name</th>");
+            out.println("<th>Book Price</th>");
             out.println("</tr>");
-        }
 
-        out.println("</table>");
+            for (Book book : books) {
+                out.println("<tr>");
+                out.println("<td>" + book.getId() + "</td>");
+                out.println("<td>" + book.getName() + "</td>");
+                out.println("<td>" + book.getPrice() + "</td>");
+                out.println("</tr>");
+            }
+
+            out.println("</table>");
+        }
     }
 }
